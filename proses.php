@@ -7,8 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email'] ?? 'Tidak diisi');
     $nohp = htmlspecialchars($_POST['nohp'] ?? 'Tidak diisi');
 } else {
-    // Jika diakses langsung tanpa kirim form, arahkan kembali ke index.html
-    header("Location: index.html");
+    // Jika diakses langsung tanpa kirim form, arahkan kembali ke index.php
+    header("Location: index.php");
     exit;
 }
 ?>
@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       padding: 10px;
       border-radius: 6px;
       border-left: 3px solid #ccc;
-      white-space: pre-line; /* Menjaga baris baru pada alamat text area */
+      white-space: pre-line;
     }
 
     .btn-back {
@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="info-value"><?php echo $nohp; ?></div>
     </div>
 
-    <a href="javascript:history.back()" class="btn-back">Kembali ke Form</a>
+    <a href="index.php" class="btn-back">Kembali ke Form</a>
   </div>
 
 </body>
