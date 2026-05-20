@@ -66,20 +66,23 @@
   <div class="container">
     <h2>BIODATA DIRI</h2>
 
-    <form>
+    <!-- FORM POST -->
+    <form action="proses.php" method="POST">
+
       <label>Nama Lengkap</label>
-      <input type="text" placeholder="Masukkan nama lengkap">
+      <input type="text" name="nama" placeholder="Masukkan nama lengkap">
 
       <label>Alamat</label>
-      <textarea placeholder="Masukkan alamat"></textarea>
+      <textarea name="alamat" placeholder="Masukkan alamat"></textarea>
 
       <label>E-mail</label>
-      <input type="email" placeholder="Masukkan e-mail">
+      <input type="email" name="email" placeholder="Masukkan e-mail">
 
       <label>No. HP</label>
-      <input type="tel" placeholder="Masukkan nomor HP">
+      <input type="tel" name="nohp" placeholder="Masukkan nomor HP">
 
       <button type="submit">Submit</button>
+
     </form>
   </div>
 
